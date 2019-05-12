@@ -4,7 +4,8 @@ boton.addEventListener('click',()=>{
     fetch('texto.txt')
     .then(data=>data.text())
     .then(data=>{
-        console.log(data)
+        console.log(data);
+        contenido.innerHTML=`${data}`
     })
 
 })
